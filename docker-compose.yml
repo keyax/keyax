@@ -1,0 +1,21 @@
+version : "3"
+
+services:
+  web:
+    image: keyax/node_core
+    volumes:
+      - keyax_app: /webapp
+
+  db:
+    image: keyax/mongo_core
+    volumes:
+      - keyax_data: /data/db
+
+volumes:
+  keyax_data:
+    external:
+      name: keyax_data_vol
+
+volumes:
+  keyax_data:
+    - driver: blockbridge
