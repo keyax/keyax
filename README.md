@@ -1,2 +1,2 @@
 # keyax
-keyax multilingual database xyz
+Docker swarm by docker-compose for keyax multilingual project
